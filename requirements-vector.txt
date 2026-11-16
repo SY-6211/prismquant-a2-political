@@ -1,0 +1,7 @@
+-r requirements.txt
+# Optional local CPU embeddings. These do not enable generation or remote inference.
+numpy>=2.2,<3
+onnxruntime>=1.22,<2
+tokenizers>=0.21,<0.23
+# Tokenizers depends on the hub package; inference here uses only checked local files.
+huggingface-hub>=0.16,<1

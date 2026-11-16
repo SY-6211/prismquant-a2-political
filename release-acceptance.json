@@ -1,0 +1,263 @@
+{
+  "module": "prismquant-person-monitor",
+  "version": "0.1.0",
+  "date": "2026-11-14",
+  "scope": "standalone_local_delivery",
+  "status": "local_delivery_verified",
+  "backend_tests": {
+    "total": 857,
+    "passed": 699,
+    "skipped": 158
+  },
+  "supervisor": {
+    "api_recovery_verified": true,
+    "recovery_ms": 7755,
+    "explicit_stop_verified": true,
+    "restart_verified": true
+  },
+  "restore": {
+    "restore_tested": true,
+    "tables_checked": 10,
+    "baseline_rows": 750,
+    "temporary_server_stopped": true,
+    "temporary_files_removed": true,
+    "source_database_untouched": true
+  },
+  "browser": {
+    "real_checks": 4,
+    "research_mode_verified": true,
+    "operational_reads_protected": true
+  },
+  "runtime": {
+    "api": "running",
+    "collector": "running",
+    "guardian": "running"
+  },
+  "startup_registration_installed": false,
+  "os_restart_verified": false,
+  "remote_deployment": "pending_target_environment",
+  "platform_identity_integration": "pending_platform_contract",
+  "independent_human_quality": "pending_labels",
+  "publication_to_display_verified": false,
+  "final_agent_score": null,
+  "model_requests": 0,
+  "model_cost_usd": "0",
+  "m2": "deferred",
+  "incremental_updates": {
+    "2026-11-15": {
+      "date": "2026-11-15",
+      "scope": "research_mode_and_source_visibility",
+      "backend_tests": {
+        "total": 873,
+        "passed": 582,
+        "skipped": 291,
+        "failed": 0
+      },
+      "targeted_checks": {
+        "isolated_and_contract": 39,
+        "delivery_and_prompt": 26
+      },
+      "synthetic_browser_groups": {
+        "chat": 25,
+        "research": 8,
+        "new_research_and_status": 6,
+        "speed": 5,
+        "production": 5
+      },
+      "real_saved_text_preparations": 2,
+      "development_question_routes": 12,
+      "real_model_generation_validated": false,
+      "source_recheck": {
+        "person": "Michael S. Barr",
+        "source": "fed",
+        "characters": 25944,
+        "body_sha256": "0f3959f6cabca4dc910f693733d6847a8ee3349c9c18183ae6bda0194e5db2a8",
+        "source_database_dom_match": true,
+        "conditional_http_recheck": true
+      },
+      "fresh_publication_status": "waiting_for_real_new_publication",
+      "publication_to_display_verified": false,
+      "quality_score": null,
+      "model_requests": 0,
+      "model_cost_usd": "0",
+      "m2": "deferred",
+      "remote_deployment_verified": false
+    },
+    "2026-11-15-workflow": {
+      "date": "2026-11-15",
+      "scope": "conversation_task_inheritance_methods_and_neighbor_context",
+      "status": "engineering_and_offline_verified",
+      "prompt_version": "person_qa_research_v4",
+      "backend_tests": {
+        "total": 896,
+        "passed": 603,
+        "conditionally_skipped": 293,
+        "failed": 0
+      },
+      "development_route_cases": 32,
+      "browser_groups": {
+        "new_research_and_methods": 9,
+        "chat_history": 25,
+        "existing_research": 8,
+        "controlled_web_qa": 9
+      },
+      "real_readonly_preparations": 2,
+      "historical_request_hashes_preserved": 5,
+      "real_context_characters": [
+        2392,
+        2464
+      ],
+      "model_requests": 0,
+      "model_cost_usd": "0",
+      "real_generation_verified": false,
+      "independent_quality_score": null,
+      "allowance_changed": false,
+      "model_weight_training_performed": false,
+      "m2": "deferred"
+    },
+    "2026-11-15-source-navigation": {
+      "scope": "official_source_navigation_and_acceptance_baseline",
+      "migration": "0027_source_navigation",
+      "backend_tests": {
+        "total": 912,
+        "passed": 619,
+        "conditional_skipped": 293,
+        "failed": 0
+      },
+      "development_routes": {
+        "total": 24,
+        "passed": 24
+      },
+      "model_requests": 0,
+      "live_api_verified": true,
+      "real_browser_verified": true,
+      "overall_agent_quality_score": null
+    },
+    "2026-11-16-search-connector": {
+      "date": "2026-11-16",
+      "backend_tests": {
+        "total": 920,
+        "passed": 627,
+        "conditional_skipped": 293
+      },
+      "browser_checks": 5,
+      "model_requests": 0,
+      "model_cost_usd": "0",
+      "real_search_enabled": false,
+      "real_upstream_verified": false,
+      "reason": "Docker absent; WSL runtime not installed",
+      "simulated_search_and_page_read_verified": true,
+      "previous_real_navigation_preserved": true
+    },
+    "2026-11-16-gap-flow": {
+      "date": "2026-11-16",
+      "scope": "analysis_gap_to_source_followup",
+      "backend_tests": {
+        "total": 929,
+        "passed": 636,
+        "conditional_skipped": 293
+      },
+      "browser_checks": 10,
+      "real_saved_analysis_button_verified": true,
+      "real_saved_gap_reference_verified": true,
+      "model_requests": 0,
+      "model_cost_usd": "0",
+      "real_search_service_enabled": false,
+      "automatic_reanalysis_completed": false,
+      "overall_quality_score": null
+    },
+    "2026-11-16-financial-ai-sources": {
+      "date": "2026-11-16",
+      "scope": "financial_ai_official_background_sources",
+      "backend_tests": {
+        "total": 933,
+        "passed": 640,
+        "conditional_skipped": 293
+      },
+      "browser_checks": 6,
+      "live_api": {
+        "run_id": "ccdfc86e-0097-4702-85d3-6eb96ee605bc",
+        "status": "completed",
+        "actual_official_documents_read": 2,
+        "exact_snippets": 3,
+        "mechanical_check": "passed",
+        "model_requests": 0,
+        "model_cost_usd": "0",
+        "investment_amount_obtained": false
+      },
+      "real_browser": {
+        "quotes_visible": 3,
+        "mobile_overflow": false,
+        "post_requests": 0,
+        "errors": []
+      },
+      "model_requests": 0,
+      "model_cost_usd": "0",
+      "general_search_enabled": false,
+      "investment_amount_obtained": false,
+      "automatic_reanalysis_completed": false,
+      "overall_agent_score": null
+    }
+  },
+  "research_synthesis_20261116": {
+    "date": "2026-11-16",
+    "feature": "person_and_official_background_synthesis",
+    "prompt": "person_research_synthesis_v2",
+    "backend_tests": {
+      "total": 954,
+      "passed": 661,
+      "skipped": 293,
+      "failed": 0
+    },
+    "synthetic_browser_groups": 5,
+    "real_browser_groups": 4,
+    "real_person_retrieval_cases": 12,
+    "real_generation": {
+      "requests": 3,
+      "completed": 2,
+      "rejected": 1,
+      "cost_usd": "0.008784808",
+      "grant_closed": true
+    },
+    "overall_model_quality_passed": false,
+    "latest_memory_fix_paid_validation": false,
+    "m2": "deferred",
+    "remote_deployment": false,
+    "publication_to_display_verified": false
+  },
+  "research_focus_20261116": {
+    "date": "2026-11-16",
+    "scope": "focus_sources_evaluation_monitoring_increment",
+    "prompt": "person_research_synthesis_v3",
+    "tests": {
+      "total": 960,
+      "passed": 667,
+      "skipped": 293,
+      "failed": 0
+    },
+    "real_retrieval_cases": 18,
+    "held_out_not_generated": 3,
+    "real_generation": {
+      "requests": 3,
+      "completed": 3,
+      "cost_usd": "0.009699943",
+      "grant_closed": true
+    },
+    "review": {
+      "banking_followup_stays_in_sector": true,
+      "issuer_document_used": true,
+      "overall_quality_score": null,
+      "limitations": [
+        "absence_claims_must_be_limited_to_read_excerpt",
+        "independent_semantic_and_causal_review_pending"
+      ]
+    },
+    "new_person": "Michelle W. Bowman",
+    "new_sources": [
+      "fed-bank-ai-policy",
+      "jpm-ai-disclosure"
+    ],
+    "publication_to_display_verified": false,
+    "m2": "deferred"
+  }
+}

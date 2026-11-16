@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="PrismQuant 人物动态：查看公开发言、来源和采集记录">
+  <title>人物动态 · PrismQuant</title>
+  <link rel="stylesheet" href="./styles.css?v=20261116-6">
+  <link rel="stylesheet" href="./web-pilot.css">
+</head>
+<body>
+  <div id="pq-monitor" data-console="research">
+    <header class="topbar">
+      <a class="brand" href="./"><span class="brand-mark">P<span>Q</span></span><span>PRISMQUANT<small>公开信息 · 人物监控</small></span></a>
+      <nav aria-label="主导航"><button class="nav-item active" data-view="feed">人物动态</button><button class="nav-item" data-view="runs" data-operations-only>采集记录</button><button id="analysis-open" class="nav-item" aria-haspopup="dialog">Agent 分析</button><button class="nav-item" data-view="chat">人物问答</button><button id="knowledge-open" class="nav-item" aria-haspopup="dialog">知识库</button><button id="catalog-open" data-operations-only class="nav-item" aria-haspopup="dialog">来源目录</button><button id="web-pilot-open" data-operations-only class="nav-item" aria-haspopup="dialog">网页试接</button></nav>
+      <div class="topbar-right"><button id="reminders-open" class="button secondary" aria-haspopup="dialog">提醒 <span id="reminder-count">—</span></button><span id="connection" class="connection">连接中</span><button id="settings-toggle" data-operations-only class="icon-button" aria-label="连接设置" title="连接设置">⚙</button></div>
+    </header>
+    <div class="workspace">
+      <aside class="people-sidebar">
+        <div class="sidebar-title"><span>人物观察</span><span class="micro">PEOPLE</span></div>
+        <button class="person all-person selected" data-person=""><span class="avatar all-avatar">◎</span><span class="person-copy"><strong>全部人物</strong><small>浏览全部公开动态</small></span><span class="chevron">›</span></button>
+        <div class="sidebar-divider">监控人物 <span id="people-count">—</span></div>
+        <div id="people-list" aria-label="选择人物"><p class="muted sidebar-loading">正在载入人物…</p></div>
+        <div class="sidebar-bottom"><span class="mini-logo">PQ / RESEARCH</span><p>每条信息，都有来源可循。</p><a id="docs-link" data-operations-only href="/docs" target="_blank" rel="noopener noreferrer">接口文档 ↗</a></div>
+      </aside>
+      <main class="main-area">
+        <section class="page-intro"><div><div class="eyebrow">PUBLIC FIGURES / INTELLIGENCE</div><h1 id="page-title">人物动态</h1><p id="page-description">追踪公开发言，保留原文与来源。</p></div><div class="intro-actions"><span id="updated-at" class="muted">尚未更新</span><button id="refresh" class="button secondary">↻ <span>刷新</span></button></div></section>
+        <section class="metrics" aria-label="来源配置概览"><div class="metric"><span>已接入人物</span><strong id="stat-people">—</strong><small>独立人物档案</small></div><div class="metric"><span>已接入来源</span><strong id="stat-sources">—</strong><small>官方页面与第三方归档</small></div><div data-operations-only class="metric"><span>允许自动采集</span><strong id="stat-eligible">—</strong><small>配置状态，非进程在线状态</small></div><div class="metric metric-note"><span class="status-dot"></span><div><strong>原文可追溯</strong><small>归属状态与附件说明分开展示</small></div></div></section>
+        <section data-operations-only class="operations-bar" aria-label="实际运行状态"><span id="op-database">数据库：检查中</span><span id="op-collector">采集进程：检查中</span><span id="op-guardian">自动重启：检查中</span><span id="op-backup">最近备份：检查中</span></section>
+        <details data-operations-only class="baseline-panel panel" open>
+          <summary>监控延迟基线 <span class="tag archive">60 秒目标：尚未测量</span></summary>
+          <p class="baseline-note">先记录采集各阶段，再验证实时性。以下不是“发帖到页面”的端到端延迟，旧记录与历史回补不会冒充实时样本。</p>
+          <div id="baseline-sources" role="status">正在读取近 24 小时的阶段观测…</div>
+          <p id="baseline-browser" class="baseline-note">本次列表请求与呈现：等待观测（仅本浏览器，不上传）</p>
+          <h3>持续发现与速度观测</h3><div id="discovery-speed" role="status">正在核对发现方式…</div>
+        </details>
+        <div id="global-error" class="notice error" role="alert" hidden></div>
+        <section id="source-status" class="panel source-status" aria-label="人物来源检查与最近入库" aria-live="polite">正在读取来源状态…</section>
+        <section class="live-bar" aria-label="页面实时更新状态">
+          <div><span id="live-status" class="connection">更新连接中</span><span id="live-message" role="status" aria-live="polite">已入库内容自动同步；来源发布延迟另行测量。</span></div>
+          <button id="live-open" class="button secondary">查看更新 <span id="live-count">0</span></button>
+        </section>
+        <section id="feed-view" class="content-grid">
+          <div class="feed-panel panel">
+            <div class="panel-heading"><div class="section-label"><span class="accent-line"></span><h2>公开发言</h2><span id="record-count" class="count-label">—</span></div><span class="micro">最新发布优先</span></div>
+            <div class="filter-row"><label class="search-box"><span aria-hidden="true">⌕</span><input id="record-search" type="search" placeholder="搜索已加载的标题" aria-label="搜索已加载的标题"></label><label class="source-filter"><select id="provenance-filter" aria-label="筛选已加载内容的来源"><option value="">全部来源</option><option value="official">官方来源</option><option value="third_party_archive">第三方归档</option></select></label></div>
+            <div id="feed-message" class="feed-message" role="status" hidden></div>
+            <div id="record-list" class="record-list" aria-label="公开发言列表"></div>
+            <div class="list-footer"><span id="filter-note" class="muted">时间按本机时区显示</span><button id="load-more" class="button secondary" hidden>加载更多</button></div>
+          </div>
+          <aside id="detail-panel" class="detail-panel panel" aria-label="发言详情"><div class="detail-empty"><span class="empty-symbol">↗</span><h2>阅读原文与归档详情</h2><p>选择左侧一条发言，查看完整正文、来源依据和附件说明。</p><div class="empty-rule"></div><span class="micro">CONTEXT MATTERS</span></div></aside>
+        </section>
+        <section id="runs-view" class="panel runs-panel" hidden><div class="panel-heading"><div class="section-label"><span class="accent-line"></span><h2>采集运行记录</h2></div><label><select id="run-source" aria-label="运行记录来源"><option value="">全部来源</option><option value="ecb">欧洲央行 · 拉加德</option><option value="trump">第三方归档 · 特朗普</option></select></label></div><p class="runs-note">运行结果来自已保存的采集历史。配置启用或历史中的 running 均不能单独证明工作进程当前在线。</p><div id="runs-message" class="feed-message" role="status" hidden></div><div id="run-list"></div><div class="list-footer"><span class="muted">按运行开始时间倒序</span><button id="runs-more" class="button secondary" hidden>加载更多</button></div><div id="run-detail" class="run-detail" hidden></div></section>
+        <section id="chat-view" aria-label="人物问答与私有历史" hidden>
+          <div id="chat-auth" class="panel chat-auth">
+            <div class="eyebrow">PERSONAL RESEARCH / PRIVATE HISTORY</div><h2>让每次提问，都有据可查。</h2>
+            <p>围绕已保存的人物公开发言提问，回看历史回答和当时引用的原文。</p>
+            <div class="chat-auth-fields"><label for="chat-file">导入会话凭证文件</label><input id="chat-file" type="file" accept=".json,application/json"><p class="muted">本机文件位于后端项目的 .runtime/chat-credentials/ 文件夹，例如 local-user.json。请勿导入 .env 或模型 API Key。</p></div>
+            <details><summary>或粘贴会话凭证</summary><form id="chat-auth-form"><label for="chat-token">会话用户凭证</label><input id="chat-token" type="password" autocomplete="off" spellcheck="false" placeholder="pqchat_…" maxlength="128"><button id="chat-connect" class="button primary" type="submit">连接我的会话</button></form></details>
+            <p id="chat-auth-status" role="status" aria-live="polite"></p>
+            <p class="chat-privacy">凭证只保留在当前页面内存，刷新后需重新导入。历史内容保存在后端，不会因断开而删除。</p>
+          </div>
+          <div id="chat-connected" hidden>
+            <div class="chat-identity panel"><span id="chat-identity"></span><span id="chat-budget-status" class="chat-generation-note">正在读取本轮在线回答额度…</span><button id="chat-budget-refresh" class="text-button" type="button">更新额度</button><button id="chat-disconnect" class="text-button" type="button">断开身份</button></div>
+            <p id="chat-notice" class="chat-notice" role="status" aria-live="polite" hidden></p>
+            <details id="chat-quality-panel" data-operations-only class="panel chat-quality"><summary>我的质量报告：反馈、引用检查与独立复核</summary><div id="chat-quality-report"></div></details>
+            <div class="chat-grid">
+              <aside class="panel chat-sidebar" aria-label="我的会话历史">
+                <div class="chat-panel-heading"><h2>我的研究会话</h2><button id="chat-list-refresh" class="text-button" type="button">刷新</button></div>
+                <details id="chat-new"><summary>＋ 新建人物会话</summary><form id="chat-new-form"><label for="chat-person">监控人物</label><select id="chat-person" required></select><label for="chat-title">会话标题</label><input id="chat-title" maxlength="120" required placeholder="例如：近期关税政策研究"><button id="chat-create" class="button primary" type="submit">创建会话</button><button id="chat-abandon-create" class="text-button" type="button" hidden>结束创建重试</button></form></details>
+                <form id="chat-search-form" class="chat-search"><label for="chat-search">搜索会话、问题和已有回答</label><input id="chat-search" type="search" maxlength="100" placeholder="输入关键词"><details><summary>创建日期与归档筛选</summary><div class="chat-dates"><label>开始日期<input id="chat-since" type="date"></label><label>结束日期<input id="chat-until" type="date"></label></div><label class="chat-check"><input id="chat-archived" type="checkbox">只看归档会话</label><p class="muted">日期筛选会话创建时间，结束日期包含当天。</p></details><div class="chat-actions"><button class="button secondary" type="submit">搜索</button><button id="chat-clear-search" class="text-button" type="button">清除条件</button></div></form>
+                <p id="chat-list-status" class="chat-list-status" role="status"></p><div id="chat-conversations"></div><button id="chat-conversations-more" class="button secondary chat-more" type="button" hidden>加载更多会话</button>
+              </aside>
+              <div class="panel chat-workspace">
+                <div id="chat-empty" class="detail-empty"><span class="empty-symbol">↗</span><h2>从一个人物、一个问题开始</h2><p>选择左侧历史会话，或新建会话。旧回答会保留生成时间、版本和引用。</p></div>
+                <div id="chat-conversation" hidden>
+                  <div class="chat-conversation-heading"><div><span id="chat-person-label" class="eyebrow"></span><h2 id="chat-conversation-title"></h2><p id="chat-conversation-meta" class="muted"></p></div><div class="chat-actions"><button id="chat-rename-toggle" class="text-button" type="button">改名</button><button id="chat-archive" class="text-button" type="button">归档</button></div></div>
+                  <form id="chat-rename-form" class="chat-rename" hidden><label for="chat-rename">新会话标题</label><input id="chat-rename" maxlength="120" required><button class="button secondary" type="submit">保存标题</button><button id="chat-rename-cancel" class="text-button" type="button">取消</button></form>
+                  <div class="chat-questions"><div class="chat-panel-heading"><h3>提问记录</h3><button id="chat-refresh" class="text-button" type="button">刷新问题与回答</button></div><div id="chat-messages"></div><button id="chat-messages-more" class="button secondary" type="button" hidden>加载后续问题</button></div>
+                  <div id="chat-question-detail" hidden><div class="chat-question"><span id="chat-question-meta" class="micro"></span><p id="chat-question-text"></p></div><div class="chat-answer-controls"><label for="chat-answer-version">回答版本</label><select id="chat-answer-version" aria-label="选择保存的回答版本"></select><button id="chat-answers-more" class="text-button" type="button" hidden>加载更早版本</button><button id="chat-generate" class="button secondary" type="button" hidden>生成这条回答</button><button id="chat-reprepare" class="text-button" type="button">准备新回答版本</button></div><p id="chat-answer-status" role="status"></p><div id="chat-answer"></div></div>
+                  <form id="chat-question-form" class="chat-composer"><label for="chat-question">继续研究这个人物</label><textarea id="chat-question" rows="3" maxlength="4000" required placeholder="例如：根据已保存的原文，概括他最近对关税的说法，并引用原句。"></textarea><details><summary>限定本次检索范围（可选）</summary><label for="chat-retrieval-mode">检索方式</label><select id="chat-retrieval-mode"><option value="hybrid" selected>关键词＋语义混合检索（推荐）</option><option value="literal">字面关键词检索（兼容）</option></select><label for="chat-research-mode">研究方式</label><select id="chat-research-mode"><option value="auto" selected>按问题自动选择</option><option value="summary">归纳要点</option><option value="compare">比较原文</option><option value="evidence">核对原文上下文</option><option value="research">研究分析（条件推断）</option></select><label class="chat-memory-toggle"><input id="chat-use-history" type="checkbox" checked>参考当前会话的相关历史</label><p class="muted">关闭后不读取前文，不会删除历史记录。</p><label class="chat-memory-toggle"><input id="chat-read-official" type="checkbox" checked>需要补充资料时，读取少量官方正文</label><p class="muted">官方来源查找无需模型额度；综合回答需要额度。每轮最多补读2页，旧资料会标注日期，读取不等于数据已核验。</p><label for="chat-query">原文必须包含的字面关键词（可选）</label><input id="chat-query" maxlength="120" placeholder="例如 tariff；留空结合问题检索"><div class="chat-dates"><label>原文发布日期起<input id="chat-source-since" type="date"></label><label>原文发布日期止<input id="chat-source-until" type="date"></label></div></details><p id="chat-composer-note" class="muted">提交后保存问题并准备资料，当前不会自动生成回答。已有回答可直接回看。</p><div class="chat-actions"><button id="chat-submit" class="button primary" type="submit">提交问题</button><button id="chat-retry-prepare" class="text-button" type="button" hidden>继续核对新版本</button><button id="chat-stop-retry" class="text-button" type="button" hidden>结束本页重试</button><span class="muted">最多 4000 字符</span></div></form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="page-footer"><span>PRISMQUANT <span class="footer-separator">/</span> 人物公开信息观察</span><span>来源归属匹配不代表内容事实已独立核实</span></footer>
+      </main>
+    </div>
+    <dialog id="settings-dialog"><form id="settings-form"><div class="dialog-heading"><h2>连接设置</h2><button type="button" id="settings-close" class="icon-button" aria-label="关闭">×</button></div><p>默认连接当前网站的后端。同学整合到独立前端时，可在这里填写后端地址。</p><label for="api-base">后端地址</label><input id="api-base" type="url" placeholder="留空使用当前网站，例如 http://127.0.0.1:8000"><p class="muted">跨端口访问需在后端设置对应 CORS 来源。此地址仅保存在当前浏览器，不包含数据库密码。</p><p id="settings-error" class="error-text" role="alert"></p><button class="button primary" type="submit">保存并连接</button></form></dialog>
+    <div id="toast" role="status" class="toast" hidden></div>
+    <dialog id="analysis-history-dialog" class="analysis-history-dialog" aria-labelledby="analysis-history-heading"><div class="dialog-heading"><h2 id="analysis-history-heading">Agent 分析记录</h2><button id="analysis-history-close" class="icon-button" aria-label="关闭分析历史">×</button></div><div id="analysis-history"></div></dialog>
+    <dialog id="live-dialog" class="live-dialog"><div class="dialog-heading"><h2>本页收到的更新</h2><button id="live-close" class="icon-button" aria-label="关闭更新">×</button></div><p class="muted">保留最近 20 条提示。修订版本单独查看，待核对内容不会覆盖已保存的原文。刷新页面后，此提示列表重新开始。</p><div id="live-items"></div><div id="live-preview" role="status"></div></dialog>
+    <dialog id="catalog-dialog" class="catalog-dialog" aria-labelledby="catalog-heading"></dialog>
+    <dialog id="web-pilot-dialog" class="web-pilot-dialog" aria-labelledby="web-pilot-heading"></dialog>
+    <dialog id="reminders-dialog" class="reminders-dialog" aria-label="站内关键词提醒"></dialog>
+    <dialog id="knowledge-dialog" class="knowledge-dialog" aria-label="原文知识库"></dialog>
+  </div>
+  <script type="module" src="./app.js?v=20261116-6"></script>
+</body>
+</html>

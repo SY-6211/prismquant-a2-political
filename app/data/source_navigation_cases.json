@@ -1,0 +1,380 @@
+{
+  "version": "source_navigation_acceptance_v1",
+  "split": "development",
+  "independent_blind_test": false,
+  "quality_score": null,
+  "cases": [
+    {
+      "id": "D01",
+      "person": "Michael S. Barr",
+      "kind": "summary",
+      "question": "请概括Michael S. Barr已保存讲话的主要观点。",
+      "history": [],
+      "strategy": "summary",
+      "task": "summary",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D02",
+      "person": "Michael S. Barr",
+      "kind": "impact",
+      "question": "Michael S. Barr的相关讲话可能对银行业有什么影响？",
+      "history": [],
+      "strategy": "research",
+      "task": "impact_analysis",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D03",
+      "person": "Michael S. Barr",
+      "kind": "compare",
+      "question": "比较Michael S. Barr两次已保存发言的异同。",
+      "history": [],
+      "strategy": "compare",
+      "task": "compare",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D04",
+      "person": "Michael S. Barr",
+      "kind": "checklist",
+      "question": "还需要哪些公司数据？",
+      "history": [
+        "Michael S. Barr关于AI的观点对金融行业有什么影响？"
+      ],
+      "strategy": "research",
+      "task": "method_checklist",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D05",
+      "person": "Michael S. Barr",
+      "kind": "sources",
+      "question": "这些数据到哪里找？",
+      "history": [
+        "Michael S. Barr关于AI的观点对金融行业有什么影响？",
+        "还需要哪些公司数据？"
+      ],
+      "strategy": "research",
+      "task": "source_lookup",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D06",
+      "person": "Michael S. Barr",
+      "kind": "item",
+      "question": "第二项去哪里找？",
+      "history": [
+        "Michael S. Barr关于AI的观点对金融行业有什么影响？",
+        "还需要哪些公司数据？"
+      ],
+      "strategy": "research",
+      "task": "source_lookup",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D07",
+      "person": "Michael S. Barr",
+      "kind": "short",
+      "question": "那风险呢？",
+      "history": [
+        "Michael S. Barr的观点对金融行业有什么影响？"
+      ],
+      "strategy": "research",
+      "task": "impact_analysis",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D08",
+      "person": "Michael S. Barr",
+      "kind": "reset",
+      "question": "换个话题，请概括能源讲话。",
+      "history": [
+        "Michael S. Barr的观点对金融行业有什么影响？"
+      ],
+      "strategy": "summary",
+      "task": "summary",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D09",
+      "person": "Christine Lagarde",
+      "kind": "summary",
+      "question": "请概括Christine Lagarde已保存讲话的主要观点。",
+      "history": [],
+      "strategy": "summary",
+      "task": "summary",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D10",
+      "person": "Christine Lagarde",
+      "kind": "impact",
+      "question": "Christine Lagarde的相关讲话可能对银行业有什么影响？",
+      "history": [],
+      "strategy": "research",
+      "task": "impact_analysis",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D11",
+      "person": "Christine Lagarde",
+      "kind": "compare",
+      "question": "比较Christine Lagarde两次已保存发言的异同。",
+      "history": [],
+      "strategy": "compare",
+      "task": "compare",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D12",
+      "person": "Christine Lagarde",
+      "kind": "checklist",
+      "question": "还需要哪些公司数据？",
+      "history": [
+        "Christine Lagarde关于AI的观点对金融行业有什么影响？"
+      ],
+      "strategy": "research",
+      "task": "method_checklist",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D13",
+      "person": "Christine Lagarde",
+      "kind": "sources",
+      "question": "这些数据到哪里找？",
+      "history": [
+        "Christine Lagarde关于AI的观点对金融行业有什么影响？",
+        "还需要哪些公司数据？"
+      ],
+      "strategy": "research",
+      "task": "source_lookup",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D14",
+      "person": "Christine Lagarde",
+      "kind": "item",
+      "question": "第二项去哪里找？",
+      "history": [
+        "Christine Lagarde关于AI的观点对金融行业有什么影响？",
+        "还需要哪些公司数据？"
+      ],
+      "strategy": "research",
+      "task": "source_lookup",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D15",
+      "person": "Christine Lagarde",
+      "kind": "short",
+      "question": "那风险呢？",
+      "history": [
+        "Christine Lagarde的观点对金融行业有什么影响？"
+      ],
+      "strategy": "research",
+      "task": "impact_analysis",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D16",
+      "person": "Christine Lagarde",
+      "kind": "reset",
+      "question": "换个话题，请概括能源讲话。",
+      "history": [
+        "Christine Lagarde的观点对金融行业有什么影响？"
+      ],
+      "strategy": "summary",
+      "task": "summary",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D17",
+      "person": "Donald Trump",
+      "kind": "summary",
+      "question": "请概括Donald Trump已保存讲话的主要观点。",
+      "history": [],
+      "strategy": "summary",
+      "task": "summary",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D18",
+      "person": "Donald Trump",
+      "kind": "impact",
+      "question": "Donald Trump的相关讲话可能对银行业有什么影响？",
+      "history": [],
+      "strategy": "research",
+      "task": "impact_analysis",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D19",
+      "person": "Donald Trump",
+      "kind": "compare",
+      "question": "比较Donald Trump两次已保存发言的异同。",
+      "history": [],
+      "strategy": "compare",
+      "task": "compare",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D20",
+      "person": "Donald Trump",
+      "kind": "checklist",
+      "question": "还需要哪些公司数据？",
+      "history": [
+        "Donald Trump关于AI的观点对金融行业有什么影响？"
+      ],
+      "strategy": "research",
+      "task": "method_checklist",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D21",
+      "person": "Donald Trump",
+      "kind": "sources",
+      "question": "这些数据到哪里找？",
+      "history": [
+        "Donald Trump关于AI的观点对金融行业有什么影响？",
+        "还需要哪些公司数据？"
+      ],
+      "strategy": "research",
+      "task": "source_lookup",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D22",
+      "person": "Donald Trump",
+      "kind": "item",
+      "question": "第二项去哪里找？",
+      "history": [
+        "Donald Trump关于AI的观点对金融行业有什么影响？",
+        "还需要哪些公司数据？"
+      ],
+      "strategy": "research",
+      "task": "source_lookup",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D23",
+      "person": "Donald Trump",
+      "kind": "short",
+      "question": "那风险呢？",
+      "history": [
+        "Donald Trump的观点对金融行业有什么影响？"
+      ],
+      "strategy": "research",
+      "task": "impact_analysis",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    },
+    {
+      "id": "D24",
+      "person": "Donald Trump",
+      "kind": "reset",
+      "question": "换个话题，请概括能源讲话。",
+      "history": [
+        "Donald Trump的观点对金融行业有什么影响？"
+      ],
+      "strategy": "summary",
+      "task": "summary",
+      "checks": [
+        "正确承接人物与主题",
+        "回应本轮问题而非重写上一轮",
+        "来源和缺口分别说明"
+      ]
+    }
+  ]
+}

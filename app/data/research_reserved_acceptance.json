@@ -1,0 +1,47 @@
+{
+  "version": "research_reserved_acceptance_v1",
+  "split": "reserved_acceptance",
+  "independent_blind_test": false,
+  "not_for_current_regression": true,
+  "quality_score": null,
+  "rubric": [
+    "是否完成本轮任务",
+    "是否承接具体前文项目",
+    "是否混淆人物原话与背景",
+    "来源是否适用且可打开",
+    "是否明确实际读取及未核验数据",
+    "用时与费用"
+  ],
+  "cases": [
+    {
+      "id": "A01",
+      "person": "Christine Lagarde",
+      "question": "请比较两次已保存的通胀表述；如果只有一条资料，请说明缺少哪一条。"
+    },
+    {
+      "id": "A02",
+      "person": "Michael S. Barr",
+      "question": "沿用上一份清单，只说明第三项的免费来源及查找步骤。"
+    },
+    {
+      "id": "A03",
+      "person": "Donald Trump",
+      "question": "关税提议是否已经实施？请区分发言和正式文件。"
+    },
+    {
+      "id": "A04",
+      "person": "Michael S. Barr",
+      "question": "换个话题，美国工资统计在哪里下载？"
+    },
+    {
+      "id": "A05",
+      "person": "Christine Lagarde",
+      "question": "这些是欧洲的数据吗？如果是美国数据，请明确不适用的地方。"
+    },
+    {
+      "id": "A06",
+      "person": "Donald Trump",
+      "question": "直接给出原文中出现的公司名称；没有就不要补写。"
+    }
+  ]
+}

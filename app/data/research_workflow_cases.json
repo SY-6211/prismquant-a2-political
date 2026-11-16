@@ -1,0 +1,294 @@
+{
+  "version": "research_workflow_v1",
+  "purpose": "Development regression, not an independent quality benchmark",
+  "model_requests": 0,
+  "quality_score": null,
+  "cases": [
+    {
+      "id": "W01",
+      "question": "人工智能可能给金融行业带来哪些机会和风险？",
+      "history": [],
+      "requested": "auto",
+      "strategy": "research",
+      "task": "impact_analysis"
+    },
+    {
+      "id": "W02",
+      "question": "接着刚才的分析，如果我要研究相关股票，还需要核对哪些公司或市场数据？请说明每类数据有什么用，并区分已有依据和待验证信息。",
+      "history": [
+        "人工智能对金融行业有什么影响？"
+      ],
+      "requested": "auto",
+      "strategy": "research",
+      "task": "method_checklist"
+    },
+    {
+      "id": "W03",
+      "question": "为了研究股票，还要查什么资料？",
+      "history": [],
+      "requested": "auto",
+      "strategy": "research",
+      "task": "method_checklist"
+    },
+    {
+      "id": "W04",
+      "question": "比较两家银行之前需要哪些指标？",
+      "history": [],
+      "requested": "auto",
+      "strategy": "research",
+      "task": "method_checklist"
+    },
+    {
+      "id": "W05",
+      "question": "金融行业AI研究需要哪些数据？",
+      "history": [],
+      "requested": "auto",
+      "strategy": "research",
+      "task": "method_checklist"
+    },
+    {
+      "id": "W06",
+      "question": "哪些公司数据能检验这项投资假设？",
+      "history": [],
+      "requested": "auto",
+      "strategy": "research",
+      "task": "method_checklist"
+    },
+    {
+      "id": "W07",
+      "question": "Which company or market data should I verify next for investment research?",
+      "history": [],
+      "requested": "auto",
+      "strategy": "research",
+      "task": "method_checklist"
+    },
+    {
+      "id": "W08",
+      "question": "请核对原文中的准确句子。",
+      "history": [],
+      "requested": "auto",
+      "strategy": "evidence",
+      "task": "evidence"
+    },
+    {
+      "id": "W09",
+      "question": "Barr讲话里列出了哪些数据？",
+      "history": [],
+      "requested": "auto",
+      "strategy": "evidence",
+      "task": "evidence"
+    },
+    {
+      "id": "W10",
+      "question": "这句银行风险的引文出处在哪？",
+      "history": [],
+      "requested": "auto",
+      "strategy": "evidence",
+      "task": "evidence"
+    },
+    {
+      "id": "W11",
+      "question": "Which exact source should I verify for this quote?",
+      "history": [],
+      "requested": "auto",
+      "strategy": "evidence",
+      "task": "evidence"
+    },
+    {
+      "id": "W12",
+      "question": "原文版本有修订吗？",
+      "history": [],
+      "requested": "auto",
+      "strategy": "evidence",
+      "task": "evidence"
+    },
+    {
+      "id": "W13",
+      "question": "那风险呢？",
+      "history": [
+        "人工智能对金融行业有什么影响？"
+      ],
+      "requested": "auto",
+      "strategy": "research",
+      "task": "impact_analysis"
+    },
+    {
+      "id": "W14",
+      "question": "这些条件成立吗？",
+      "history": [
+        "人工智能对金融行业有什么影响？"
+      ],
+      "requested": "auto",
+      "strategy": "research",
+      "task": "impact_analysis"
+    },
+    {
+      "id": "W15",
+      "question": "请继续",
+      "history": [
+        "人工智能对金融行业有什么影响？"
+      ],
+      "requested": "auto",
+      "strategy": "research",
+      "task": "impact_analysis"
+    },
+    {
+      "id": "W16",
+      "question": "还需要哪些数据？",
+      "history": [
+        "人工智能对金融行业有什么影响？",
+        "还需要哪些数据？"
+      ],
+      "requested": "auto",
+      "strategy": "research",
+      "task": "method_checklist"
+    },
+    {
+      "id": "W17",
+      "question": "这些数据到哪里找？",
+      "history": [
+        "人工智能对金融行业有什么影响？",
+        "还需要哪些数据？"
+      ],
+      "requested": "auto",
+      "strategy": "research",
+      "task": "source_lookup"
+    },
+    {
+      "id": "W18",
+      "question": "请继续",
+      "history": [
+        "人工智能对金融行业有什么影响？",
+        "还需要哪些数据？"
+      ],
+      "requested": "auto",
+      "strategy": "research",
+      "task": "method_checklist"
+    },
+    {
+      "id": "W19",
+      "question": "请继续",
+      "history": [
+        "人工智能对金融行业有什么影响？",
+        "还需要哪些数据？",
+        "这些数据到哪里找？"
+      ],
+      "requested": "auto",
+      "strategy": "research",
+      "task": "source_lookup"
+    },
+    {
+      "id": "W20",
+      "question": "请继续",
+      "history": [],
+      "requested": "auto",
+      "strategy": "focused",
+      "task": "focused"
+    },
+    {
+      "id": "W21",
+      "question": "那风险呢？",
+      "history": [],
+      "requested": "auto",
+      "strategy": "focused",
+      "task": "focused"
+    },
+    {
+      "id": "W22",
+      "question": "请核对原文中的句子。",
+      "history": [
+        "人工智能对金融行业有什么影响？"
+      ],
+      "requested": "auto",
+      "strategy": "evidence",
+      "task": "evidence"
+    },
+    {
+      "id": "W23",
+      "question": "换个话题，请概括利率讲话。",
+      "history": [
+        "人工智能对金融行业有什么影响？"
+      ],
+      "requested": "auto",
+      "strategy": "summary",
+      "task": "summary"
+    },
+    {
+      "id": "W24",
+      "question": "请继续",
+      "history": [
+        "人工智能对金融行业有什么影响？",
+        "换个话题，请概括利率讲话。"
+      ],
+      "requested": "auto",
+      "strategy": "summary",
+      "task": "summary"
+    },
+    {
+      "id": "W25",
+      "question": "比较两个时期的说法。",
+      "history": [],
+      "requested": "auto",
+      "strategy": "compare",
+      "task": "compare"
+    },
+    {
+      "id": "W26",
+      "question": "请概括这篇讲话。",
+      "history": [],
+      "requested": "auto",
+      "strategy": "summary",
+      "task": "summary"
+    },
+    {
+      "id": "W27",
+      "question": "Which data should I verify for stock research?",
+      "history": [],
+      "requested": "evidence",
+      "strategy": "evidence",
+      "task": "evidence"
+    },
+    {
+      "id": "W28",
+      "question": "请概括这篇讲话。",
+      "history": [],
+      "requested": "research",
+      "strategy": "research",
+      "task": "impact_analysis"
+    },
+    {
+      "id": "W29",
+      "question": "还需要核对哪些公司数据？",
+      "history": [],
+      "requested": "research",
+      "strategy": "research",
+      "task": "method_checklist"
+    },
+    {
+      "id": "W30",
+      "question": "某只股票今天的成交价是多少？",
+      "history": [],
+      "requested": "auto",
+      "strategy": "focused",
+      "task": "focused"
+    },
+    {
+      "id": "W31",
+      "question": "人工智能对银行有什么影响？",
+      "history": [],
+      "requested": "auto",
+      "strategy": "research",
+      "task": "impact_analysis"
+    },
+    {
+      "id": "W32",
+      "question": "请继续",
+      "history": [
+        "请核对这段原文中的准确句子。"
+      ],
+      "requested": "auto",
+      "strategy": "evidence",
+      "task": "evidence"
+    }
+  ]
+}

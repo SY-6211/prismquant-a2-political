@@ -1,0 +1,2965 @@
+{
+  "schema_version": 1,
+  "workbook_name": "INVESTAT_84個來源及網址.xlsx",
+  "workbook_sha256": "74a4f969b6f1a76cf77a6a4ed7def4188a04cd501773c36efc962732dfccd602",
+  "dataset_note": "原表称来源为INVESTAT机构筛选器；原表核实状态和链接依据属于表作者记录，不代表本系统核实。",
+  "original_label_count": 114,
+  "entries": [
+    {
+      "number": 1,
+      "name": "Apollo",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Apollo",
+        "note": "官方 The Daily Spark；截圖對應 Torsten Slok 2026-11-03 文章。",
+        "verification_refs": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/10-percent-nominal-gdp-growth-coming",
+        "sheet_row": 8,
+        "labels": [
+          {
+            "number": 1,
+            "label": "Apollo",
+            "source_number": 1,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 2,
+      "name": "SEC Form 4",
+      "source_type": "監管披露",
+      "original": {
+        "reference_url": "https://www.sec.gov/submit-filings/forms-index/aboutformsform4",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "SEC Form 4",
+        "note": "監管申報資料入口；日報及統計屬網站再整理，不代表 SEC 撰寫新聞。",
+        "verification_refs": "https://www.sec.gov/submit-filings/forms-index/aboutformsform4",
+        "sheet_row": 9,
+        "labels": [
+          {
+            "number": 2,
+            "label": "SEC Form 4",
+            "source_number": 2,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "profile",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "profile_only",
+          "documentation_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 3,
+      "name": "Haver Analytics",
+      "source_type": "研究／顧問機構",
+      "original": {
+        "reference_url": "https://www.haver.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Haver Analytics",
+        "note": "官方宏觀資料與 Economy in Brief 評論。",
+        "verification_refs": "https://www.haver.com/articles/u-s-jolts-labor-demand-improved-in-september",
+        "sheet_row": 10,
+        "labels": [
+          {
+            "number": 3,
+            "label": "Haver Analytics",
+            "source_number": 3,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 4,
+      "name": "J.P. Morgan",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.jpmorgan.com/insights/research",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "J.P. Morgan",
+        "note": "J.P. Morgan Global Research 公開研究入口。",
+        "verification_refs": "https://www.jpmorgan.com/insights/research",
+        "sheet_row": 11,
+        "labels": [
+          {
+            "number": 4,
+            "label": "J.P. Morgan",
+            "source_number": 4,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 5,
+      "name": "UBS",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.ubs.com/global/en.html",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "UBS\nUBS CIO",
+        "note": "包含 UBS CIO；已另核實截圖 US midterms put Congress in play 原文。",
+        "verification_refs": "https://www.ubs.com/global/en.html",
+        "sheet_row": 12,
+        "labels": [
+          {
+            "number": 5,
+            "label": "UBS",
+            "source_number": 5,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 38,
+            "label": "UBS CIO",
+            "source_number": 5,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 6,
+      "name": "HKEX DI",
+      "source_type": "監管披露",
+      "original": {
+        "reference_url": "https://www2.hkexnews.hk/Shareholding-Disclosures/Disclosure-of-Interests?sc_lang=en",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "HKEX DI",
+        "note": "港交所權益披露入口；日報統計屬再加工。",
+        "verification_refs": "https://www2.hkexnews.hk/Shareholding-Disclosures/Disclosure-of-Interests?sc_lang=en",
+        "sheet_row": 13,
+        "labels": [
+          {
+            "number": 6,
+            "label": "HKEX DI",
+            "source_number": 6,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 7,
+      "name": "Serenity",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://x.com/aleabitoreddit",
+        "reported_url_status": "站內明示帳號",
+        "raw_tags": "Serenity\nSerenity / X",
+        "note": "INVESTAT 文章明示 @aleabitoreddit；未獨立完成帳號認證。",
+        "verification_refs": "https://investat.ai/",
+        "sheet_row": 14,
+        "labels": [
+          {
+            "number": 7,
+            "label": "Serenity",
+            "source_number": 7,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 95,
+            "label": "Serenity / X",
+            "source_number": 7,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "account",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "identity_needs_review"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 8,
+      "name": "パウロ（Paul）",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://x.com/paurooteri",
+        "reported_url_status": "站內明示帳號",
+        "raw_tags": "パウロ (Paul)\nパウロ / X",
+        "note": "INVESTAT 文章明示 @paurooteri；未獨立完成帳號認證。",
+        "verification_refs": "https://investat.ai/",
+        "sheet_row": 15,
+        "labels": [
+          {
+            "number": 8,
+            "label": "パウロ (Paul)",
+            "source_number": 8,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 96,
+            "label": "パウロ / X",
+            "source_number": 8,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "account",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "identity_needs_review"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 9,
+      "name": "FUNDA",
+      "source_type": "研究／顧問機構",
+      "original": {
+        "reference_url": "https://funda.ai/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "FUNDA\nFunda",
+        "note": "研究平台與 FUNDA Substack；營運主體由 fundaai.substack.com/tos 確認為 Consensus AI Technology Pte. Ltd.。",
+        "verification_refs": "https://funda.ai/help-center",
+        "sheet_row": 16,
+        "labels": [
+          {
+            "number": 9,
+            "label": "FUNDA",
+            "source_number": 9,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 25,
+            "label": "Funda",
+            "source_number": 9,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 10,
+      "name": "SemiWiki",
+      "source_type": "媒體／節目",
+      "original": {
+        "reference_url": "https://semiwiki.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "SemiWiki",
+        "note": "半導體專業媒體與論壇；部分內容轉引 ServeTheHome 等媒體。",
+        "verification_refs": "https://semiwiki.com/",
+        "sheet_row": 17,
+        "labels": [
+          {
+            "number": 10,
+            "label": "SemiWiki",
+            "source_number": 10,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 11,
+      "name": "All-In Podcast",
+      "source_type": "媒體／節目",
+      "original": {
+        "reference_url": "https://allin.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "All-In Podcast",
+        "note": "官網列出 Chamath Palihapitiya、Jason Calacanis、David Sacks、David Friedberg 四位主持人。",
+        "verification_refs": "https://allin.com/",
+        "sheet_row": 18,
+        "labels": [
+          {
+            "number": 11,
+            "label": "All-In Podcast",
+            "source_number": 11,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 12,
+      "name": "Bloomberg",
+      "source_type": "媒體／節目",
+      "original": {
+        "reference_url": "https://www.bloomberg.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Bloomberg Surveillance\nRay Dalio（Bloomberg访谈）\nOdd Lots / Bloomberg",
+        "note": "出版機構口徑合併 Surveillance、Odd Lots 及 Bloomberg 訪談；節目仍各自獨立。",
+        "verification_refs": "https://bloomberg.com/podcasts/surveillance ; https://bloomberg.com/podcasts/odd_lots",
+        "sheet_row": 19,
+        "labels": [
+          {
+            "number": 12,
+            "label": "Bloomberg Surveillance",
+            "source_number": 12,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 54,
+            "label": "Ray Dalio（Bloomberg访谈）",
+            "source_number": 12,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 109,
+            "label": "Odd Lots / Bloomberg",
+            "source_number": 12,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only",
+          "publisher_speaker_boundary"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 13,
+      "name": "Goldman Sachs",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.goldmansachs.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Goldman Sachs",
+        "note": "官方研究、觀點及播客入口。",
+        "verification_refs": "https://www.goldmansachs.com/",
+        "sheet_row": 20,
+        "labels": [
+          {
+            "number": 13,
+            "label": "Goldman Sachs",
+            "source_number": 13,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 14,
+      "name": "Robert Friedland",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://www.ivanhoemines.com/events/robert-friedland-at-the-white-house-with-president-donald-trump/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Robert Friedland\nRobert Friedland / Ivanhoe\nRobert Friedland / X",
+        "note": "公司官方人物活動頁，確認其 Ivanhoe Mines 創辦人身分；不是個人官網，個人發言與公司來源須分辨。",
+        "verification_refs": "https://www.ivanhoemines.com/events/robert-friedland-at-the-white-house-with-president-donald-trump/",
+        "sheet_row": 21,
+        "labels": [
+          {
+            "number": 14,
+            "label": "Robert Friedland",
+            "source_number": 14,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 86,
+            "label": "Robert Friedland / Ivanhoe",
+            "source_number": 14,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 102,
+            "label": "Robert Friedland / X",
+            "source_number": 14,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "publisher_speaker_boundary"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 15,
+      "name": "Damnang",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://www.damnang.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Damnang\nDamnang / X",
+        "note": "Damnang Research 官方出版物；INVESTAT 另明示 X @damnang2。",
+        "verification_refs": "https://research.damnang.com/ ; https://www.damnang.com/",
+        "sheet_row": 22,
+        "labels": [
+          {
+            "number": 15,
+            "label": "Damnang",
+            "source_number": 15,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 103,
+            "label": "Damnang / X",
+            "source_number": 15,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 16,
+      "name": "ZeroHedge",
+      "source_type": "媒體／節目",
+      "original": {
+        "reference_url": "https://www.zerohedge.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "zerohedge\nZeroHedge / Goldman\nzerohedge / X",
+        "note": "媒體與聚合平台；ZeroHedge / Goldman 應保留 Goldman 為上游來源。",
+        "verification_refs": "https://www.zerohedge.com/",
+        "sheet_row": 23,
+        "labels": [
+          {
+            "number": 16,
+            "label": "zerohedge",
+            "source_number": 16,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 73,
+            "label": "ZeroHedge / Goldman",
+            "source_number": 16,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 101,
+            "label": "zerohedge / X",
+            "source_number": 16,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only",
+          "publisher_speaker_boundary"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 17,
+      "name": "Jukan",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://x.com/jukan05",
+        "reported_url_status": "站內明示帳號",
+        "raw_tags": "Jukan\nJukan / Citrini\nJukan / X",
+        "note": "INVESTAT 文章明示 @jukan05；未獨立完成帳號認證。Citrini 出版物可佐證研究團隊關係，但不等同每篇均由 Citrini 發布。",
+        "verification_refs": "https://investat.ai/",
+        "sheet_row": 24,
+        "labels": [
+          {
+            "number": 17,
+            "label": "Jukan",
+            "source_number": 17,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 87,
+            "label": "Jukan / Citrini",
+            "source_number": 17,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 97,
+            "label": "Jukan / X",
+            "source_number": 17,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "account",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "identity_needs_review"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 18,
+      "name": "Edward Conard／Macro Roundup",
+      "source_type": "媒體／節目",
+      "original": {
+        "reference_url": "https://www.edwardconard.com/macro-roundup/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Edward Conard\nEdward Conard Macro Roundup",
+        "note": "官方彙編；部分內容標示 AI 摘要並連往原作者，不能將全部觀點當成 Conard 原創。",
+        "verification_refs": "https://www.edwardconard.com/macro-roundup/this-time-would-have-to-be-very-different-part-ii/",
+        "sheet_row": 25,
+        "labels": [
+          {
+            "number": 18,
+            "label": "Edward Conard",
+            "source_number": 18,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 32,
+            "label": "Edward Conard Macro Roundup",
+            "source_number": 18,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "publisher_speaker_boundary"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 19,
+      "name": "Omer Cheema",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://cheemaomer.substack.com/",
+        "reported_url_status": "已核實帳號",
+        "raw_tags": "Omer Cheema",
+        "note": "已對應半導體作者：前 AMD GPU 設計、Samsung、Renesas 背景；避免與同名人士混淆。",
+        "verification_refs": "https://cheemaomer.substack.com/ ; https://seekingalpha.com/author/omer-cheema",
+        "sheet_row": 26,
+        "labels": [
+          {
+            "number": 19,
+            "label": "Omer Cheema",
+            "source_number": 19,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 20,
+      "name": "Diligent Plane",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://x.com/DiligentPlane",
+        "reported_url_status": "站內明示帳號",
+        "raw_tags": "Diligent Plane",
+        "note": "INVESTAT 文章明示 @DiligentPlane；未獨立完成帳號認證。",
+        "verification_refs": "https://investat.ai/",
+        "sheet_row": 27,
+        "labels": [
+          {
+            "number": 20,
+            "label": "Diligent Plane",
+            "source_number": 20,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "account",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "identity_needs_review"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 21,
+      "name": "Morgan Stanley",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.morganstanley.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Morgan Stanley\n摩根士丹利",
+        "note": "官方網站；合併中文標籤摩根士丹利。",
+        "verification_refs": "https://www.morganstanley.com/",
+        "sheet_row": 28,
+        "labels": [
+          {
+            "number": 21,
+            "label": "Morgan Stanley",
+            "source_number": 21,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 43,
+            "label": "摩根士丹利",
+            "source_number": 21,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 22,
+      "name": "a16z",
+      "source_type": "媒體／節目",
+      "original": {
+        "reference_url": "https://a16z.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "a16z\na16z / The a16z Show\na16z Show / OpenAI\nThe a16z Show / Reducto",
+        "note": "Andreessen Horowitz 官方網站及 Podcast Network；OpenAI、Reducto 等訪談嘉賓不因斜線標籤自動成為獨立發布者。",
+        "verification_refs": "https://a16z.com/",
+        "sheet_row": 29,
+        "labels": [
+          {
+            "number": 22,
+            "label": "a16z",
+            "source_number": 22,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 46,
+            "label": "a16z / The a16z Show",
+            "source_number": 22,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 79,
+            "label": "a16z Show / OpenAI",
+            "source_number": 22,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 91,
+            "label": "The a16z Show / Reducto",
+            "source_number": 22,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only",
+          "publisher_speaker_boundary"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 23,
+      "name": "Jim Bianco／Bianco Research",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://www.biancoresearch.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Jim Bianco\nBianco Research",
+        "note": "官方列 Jim Bianco 為 President and Macro Strategist；合併屬研究來源群口徑，不代表個人與公司法律等同。",
+        "verification_refs": "https://www.biancoresearch.com/",
+        "sheet_row": 30,
+        "labels": [
+          {
+            "number": 23,
+            "label": "Jim Bianco",
+            "source_number": 23,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 85,
+            "label": "Bianco Research",
+            "source_number": 23,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 24,
+      "name": "Peter Berezin",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://www.bcaresearch.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Peter Berezin",
+        "note": "所屬研究機構官方入口；官網刊載 Peter Berezin 文章，活動文件列 Chief Global Strategist；非個人官網。",
+        "verification_refs": "https://www.bcaresearch.com/ ; https://www.bcaresearch.com/system/files/2025-09/BCA_Conference_Agenda%205.pdf",
+        "sheet_row": 31,
+        "labels": [
+          {
+            "number": 24,
+            "label": "Peter Berezin",
+            "source_number": 24,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only",
+          "publisher_speaker_boundary"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 25,
+      "name": "Barclays",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://home.barclays/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Barclays",
+        "note": "官方集團網域及年報核實；首頁對文字擷取工具回傳 403。",
+        "verification_refs": "https://home.barclays/content/dam/home-barclays/documents/investor-relations/reports-and-events/annual-reports/2025/Barclays-PLC-Annual-Report-2025.pdf",
+        "sheet_row": 32,
+        "labels": [
+          {
+            "number": 26,
+            "label": "Barclays",
+            "source_number": 25,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 26,
+      "name": "DoubleLine Capital",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://doubleline.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "DoubleLine Capital",
+        "note": "官方投資管理與市場觀點網站。",
+        "verification_refs": "https://doubleline.com/",
+        "sheet_row": 33,
+        "labels": [
+          {
+            "number": 27,
+            "label": "DoubleLine Capital",
+            "source_number": 26,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 27,
+      "name": "Gavin Baker",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://atreidesmgmt.com/team/gavin-baker/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Gavin Baker\nGavin Baker / Atreides",
+        "note": "Atreides 官方人物簡介；確認 Managing Partner 與 CIO 職務；非個人官網，個人發言需保留發布渠道。",
+        "verification_refs": "https://atreidesmgmt.com/team/gavin-baker/",
+        "sheet_row": 34,
+        "labels": [
+          {
+            "number": 28,
+            "label": "Gavin Baker",
+            "source_number": 27,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 84,
+            "label": "Gavin Baker / Atreides",
+            "source_number": 27,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "profile",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "profile_only",
+          "publisher_speaker_boundary"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 28,
+      "name": "IMF",
+      "source_type": "國際組織",
+      "original": {
+        "reference_url": "https://www.imf.org/en/Home",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "IMF",
+        "note": "國際貨幣基金組織官方網站。",
+        "verification_refs": "https://www.imf.org/en/Home",
+        "sheet_row": 35,
+        "labels": [
+          {
+            "number": 29,
+            "label": "IMF",
+            "source_number": 28,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 29,
+      "name": "Jeff Pu",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": null,
+        "reported_url_status": "待核實",
+        "raw_tags": "Jeff Pu",
+        "note": "搜尋找到同名 LinkedIn 個人頁及 GF Securities 招聘資訊；依保守口徑未將其直接認定為站內內容發佈入口。",
+        "verification_refs": "未找到可直接確認且對應站內來源的個人官網。",
+        "sheet_row": 36,
+        "labels": [
+          {
+            "number": 30,
+            "label": "Jeff Pu",
+            "source_number": 29,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "missing",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "missing_url",
+          "identity_needs_review"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 30,
+      "name": "Fireside Alpha",
+      "source_type": "媒體／節目",
+      "original": {
+        "reference_url": "https://firesidealpha.substack.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Fireside Alpha\nFireside Alpha / Chamath\nFireside Alpha / X",
+        "note": "官方 About 頁說明其整理商業、科技及投資 Podcast／訪談內容；此連結為自有刊物入口。",
+        "verification_refs": "https://firesidealpha.substack.com/about",
+        "sheet_row": 37,
+        "labels": [
+          {
+            "number": 31,
+            "label": "Fireside Alpha",
+            "source_number": 30,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 72,
+            "label": "Fireside Alpha / Chamath",
+            "source_number": 30,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 98,
+            "label": "Fireside Alpha / X",
+            "source_number": 30,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only",
+          "publisher_speaker_boundary"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 31,
+      "name": "Michael Burry／Cassandra Unchained",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://michaeljburry.substack.com/",
+        "reported_url_status": "已核實帳號",
+        "raw_tags": "Cassandra Unchained / Michael Burry\nMichael Burry",
+        "note": "刊物首頁直接標示 Cassandra Unchained 及作者 Michael Burry。",
+        "verification_refs": "https://michaeljburry.substack.com/；https://substack.com/@michaeljburry",
+        "sheet_row": 38,
+        "labels": [
+          {
+            "number": 33,
+            "label": "Cassandra Unchained / Michael Burry",
+            "source_number": 31,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 51,
+            "label": "Michael Burry",
+            "source_number": 31,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 32,
+      "name": "SemiAnalysis",
+      "source_type": "研究／顧問機構",
+      "original": {
+        "reference_url": "https://semianalysis.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "SemiAnalysis",
+        "note": "官方首頁標示 AI 與半導體研究、模型及諮詢，並連到其 Newsletter。",
+        "verification_refs": "https://semianalysis.com/",
+        "sheet_row": 39,
+        "labels": [
+          {
+            "number": 34,
+            "label": "SemiAnalysis",
+            "source_number": 32,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 33,
+      "name": "BlackRock",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.blackrock.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "BlackRock",
+        "note": "官方全球入口；可能依訪客地區導向不同語言頁面。",
+        "verification_refs": "https://www.blackrock.com/",
+        "sheet_row": 40,
+        "labels": [
+          {
+            "number": 35,
+            "label": "BlackRock",
+            "source_number": 33,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 34,
+      "name": "Deutsche Bank",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.db.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Deutsche Bank\nDeutsche Bank Research",
+        "note": "官方首頁提供 Research 連結至 dbresearch.com。",
+        "verification_refs": "https://www.db.com/",
+        "sheet_row": 41,
+        "labels": [
+          {
+            "number": 36,
+            "label": "Deutsche Bank",
+            "source_number": 34,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 39,
+            "label": "Deutsche Bank Research",
+            "source_number": 34,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 35,
+      "name": "Citadel Securities",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.citadelsecurities.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Citadel Securities",
+        "note": "官網明示 Citadel Securities；與 Citadel 投資管理業務分開列示。",
+        "verification_refs": "https://www.citadelsecurities.com/",
+        "sheet_row": 42,
+        "labels": [
+          {
+            "number": 37,
+            "label": "Citadel Securities",
+            "source_number": 35,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 36,
+      "name": "Michael Howell／Capital Wars",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://capitalwars.substack.com/",
+        "reported_url_status": "已核實帳號",
+        "raw_tags": "Michael Howell\nCapital Wars",
+        "note": "Capital Wars 首頁及帳號直接標示作者 Michael Howell。",
+        "verification_refs": "https://capitalwars.substack.com/；https://substack.com/@capitalwars",
+        "sheet_row": 43,
+        "labels": [
+          {
+            "number": 40,
+            "label": "Michael Howell",
+            "source_number": 36,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 48,
+            "label": "Capital Wars",
+            "source_number": 36,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 37,
+      "name": "Citi",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.citigroup.com/global",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Citi",
+        "note": "Citi 官方集團入口，設有 Insights 及新聞欄目。",
+        "verification_refs": "https://www.citigroup.com/global",
+        "sheet_row": 44,
+        "labels": [
+          {
+            "number": 41,
+            "label": "Citi",
+            "source_number": 37,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 38,
+      "name": "ASML",
+      "source_type": "企業",
+      "original": {
+        "reference_url": "https://www.asml.com/en",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "ASML",
+        "note": "ASML 官方企業網站。",
+        "verification_refs": "https://www.asml.com/en",
+        "sheet_row": 45,
+        "labels": [
+          {
+            "number": 42,
+            "label": "ASML",
+            "source_number": 38,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 39,
+      "name": "Mark Minervini",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://www.minervini.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Mark Minervini",
+        "note": "Minervini Markets 360／Minervini Private Access 官方入口。",
+        "verification_refs": "https://www.minervini.com/",
+        "sheet_row": 46,
+        "labels": [
+          {
+            "number": 44,
+            "label": "Mark Minervini",
+            "source_number": 39,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 40,
+      "name": "桥水",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.bridgewater.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "桥水",
+        "note": "Bridgewater Associates 官方首頁，設 Research & Insights。",
+        "verification_refs": "https://www.bridgewater.com/",
+        "sheet_row": 47,
+        "labels": [
+          {
+            "number": 45,
+            "label": "桥水",
+            "source_number": 40,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 41,
+      "name": "PIMCO",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.pimco.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "PIMCO",
+        "note": "PIMCO 官方全球入口；可能依訪客地區轉向當地語言頁面。",
+        "verification_refs": "https://www.pimco.com/",
+        "sheet_row": 48,
+        "labels": [
+          {
+            "number": 47,
+            "label": "PIMCO",
+            "source_number": 41,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 42,
+      "name": "Quinn政经瞭望",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": null,
+        "reported_url_status": "待核實",
+        "raw_tags": "Quinn政经瞭望",
+        "note": "第三方鏡像出現 quinnoutlook，但未作已核實官方連結。",
+        "verification_refs": "站內目前僅確認來源名稱；搜尋結果只有第三方鏡像，未確認一手帳號頁。",
+        "sheet_row": 49,
+        "labels": [
+          {
+            "number": 49,
+            "label": "Quinn政经瞭望",
+            "source_number": 42,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "missing",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "missing_url",
+          "identity_needs_review"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 43,
+      "name": "Invest with Uncle Scrooge",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": null,
+        "reported_url_status": "待核實",
+        "raw_tags": "Invest with Uncle Scrooge",
+        "note": "第三方鏡像出現 ScrooogeUncle，但未作已核實官方連結。",
+        "verification_refs": "站內目前僅確認來源名稱；搜尋結果只有第三方鏡像，未確認一手帳號頁。",
+        "sheet_row": 50,
+        "labels": [
+          {
+            "number": 50,
+            "label": "Invest with Uncle Scrooge",
+            "source_number": 43,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "missing",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "missing_url",
+          "identity_needs_review"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 44,
+      "name": "Boston Consulting Group (BCG)",
+      "source_type": "研究／顧問機構",
+      "original": {
+        "reference_url": "https://www.bcg.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Boston Consulting Group (BCG)",
+        "note": "Boston Consulting Group 官方網站。",
+        "verification_refs": "https://www.bcg.com/",
+        "sheet_row": 51,
+        "labels": [
+          {
+            "number": 52,
+            "label": "Boston Consulting Group (BCG)",
+            "source_number": 44,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 45,
+      "name": "Rhodium Group",
+      "source_type": "研究／顧問機構",
+      "original": {
+        "reference_url": "https://rhg.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Rhodium Group",
+        "note": "Rhodium Group 官方研究網站，包含中國與能源／氣候研究。",
+        "verification_refs": "https://rhg.com/",
+        "sheet_row": 52,
+        "labels": [
+          {
+            "number": 53,
+            "label": "Rhodium Group",
+            "source_number": 45,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 46,
+      "name": "Bison Insights",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://www.bisoninsights.info/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Bison Insights",
+        "note": "官方刊物首頁顯示作者 Josh Young；About 頁說明油氣投資研究內容。",
+        "verification_refs": "https://www.bisoninsights.info/about",
+        "sheet_row": 53,
+        "labels": [
+          {
+            "number": 55,
+            "label": "Bison Insights",
+            "source_number": 46,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 47,
+      "name": "BofA",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.bankofamerica.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "BofA Securities\nBofA",
+        "note": "Bank of America 官方集團／銀行入口；不是特定 BofA Securities 研究報告直連。",
+        "verification_refs": "https://www.bankofamerica.com/",
+        "sheet_row": 54,
+        "labels": [
+          {
+            "number": 56,
+            "label": "BofA Securities",
+            "source_number": 47,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 69,
+            "label": "BofA",
+            "source_number": 47,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 48,
+      "name": "KKR Global Macro & Asset Allocation",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.kkr.com/insights",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "KKR Global Macro & Asset Allocation",
+        "note": "KKR 官方研究與觀點入口；宏觀及資產配置內容可由此查閱。",
+        "verification_refs": "https://www.kkr.com/insights",
+        "sheet_row": 55,
+        "labels": [
+          {
+            "number": 57,
+            "label": "KKR Global Macro & Asset Allocation",
+            "source_number": 48,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 49,
+      "name": "美国能源信息署（U.S. Energy Information Administration，EIA）",
+      "source_type": "官方數據",
+      "original": {
+        "reference_url": "https://www.eia.gov/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "美国能源信息署（U.S. Energy Information Administration，EIA）",
+        "note": "美國能源信息署官方政府網站。",
+        "verification_refs": "https://www.eia.gov/",
+        "sheet_row": 56,
+        "labels": [
+          {
+            "number": 58,
+            "label": "美国能源信息署（U.S. Energy Information Administration，EIA）",
+            "source_number": 49,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 50,
+      "name": "AllianceBernstein",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.alliancebernstein.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "AllianceBernstein",
+        "note": "AllianceBernstein 官方網站及投資觀點入口。",
+        "verification_refs": "https://www.alliancebernstein.com/",
+        "sheet_row": 57,
+        "labels": [
+          {
+            "number": 59,
+            "label": "AllianceBernstein",
+            "source_number": 50,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 51,
+      "name": "BNY Investment Strategy & Research Group",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.bny.com/corporate/global/en.html",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "BNY Investment Strategy & Research Group",
+        "note": "BNY 官網發布的 Checkpoints 報告直接列出 Investment Strategy & Research Group；連結使用官方主入口。",
+        "verification_refs": "https://www.bny.com/assets/investments/imemea/pdfs/emea_checkpoints_apr26.pdf",
+        "sheet_row": 58,
+        "labels": [
+          {
+            "number": 60,
+            "label": "BNY Investment Strategy & Research Group",
+            "source_number": 51,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 52,
+      "name": "Kuveyt Türk Portfolio",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.kuveytturkportfoy.com.tr/en/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Kuveyt Türk Portfolio",
+        "note": "母銀行官方子公司頁與 Portföy 官網互相印證名稱及資產管理業務。",
+        "verification_refs": "https://www.kuveytturk.com.tr/en/about-us/our-subsidiaries/kuveyt-turk-portfoy；https://www.kuveytturkportfoy.com.tr/en/",
+        "sheet_row": 59,
+        "labels": [
+          {
+            "number": 61,
+            "label": "Kuveyt Türk Portfolio",
+            "source_number": 52,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 53,
+      "name": "KGI Private Wealth",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.kgi.com/en/about-page/kgis",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "KGI Private Wealth",
+        "note": "已核實 KGI Securities 官方集團介紹，包含財富管理業務；站內 Private Wealth 標籤對應的具體地區／研究欄目尚未定位。",
+        "verification_refs": "https://www.kgi.com/en/about-page/kgis",
+        "sheet_row": 60,
+        "labels": [
+          {
+            "number": 62,
+            "label": "KGI Private Wealth",
+            "source_number": 53,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "profile",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "profile_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 54,
+      "name": "Allianz Global Investors",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.allianzgi.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Allianz Global Investors",
+        "note": "Allianz Global Investors 官方網站，包含投資主題與 House View。",
+        "verification_refs": "https://www.allianzgi.com/",
+        "sheet_row": 61,
+        "labels": [
+          {
+            "number": 63,
+            "label": "Allianz Global Investors",
+            "source_number": 54,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 55,
+      "name": "Eastspring Investments",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.eastspring.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Eastspring Investments",
+        "note": "Eastspring Investments 官方全球入口，設 Insights 欄目。",
+        "verification_refs": "https://www.eastspring.com/",
+        "sheet_row": 62,
+        "labels": [
+          {
+            "number": 64,
+            "label": "Eastspring Investments",
+            "source_number": 55,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 56,
+      "name": "Cboe",
+      "source_type": "交易所",
+      "original": {
+        "reference_url": "https://www.cboe.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Cboe",
+        "note": "Cboe Global Markets 官方網站，包含 Market Intelligence 及市場數據。",
+        "verification_refs": "https://www.cboe.com/",
+        "sheet_row": 63,
+        "labels": [
+          {
+            "number": 65,
+            "label": "Cboe",
+            "source_number": 56,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 57,
+      "name": "Meta",
+      "source_type": "企業",
+      "original": {
+        "reference_url": "https://investor.atmeta.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Meta",
+        "note": "Meta 官方投資者關係入口；Patrick Collison 訪談另列第 84 項。",
+        "verification_refs": "https://investor.atmeta.com/home/default.aspx",
+        "sheet_row": 64,
+        "labels": [
+          {
+            "number": 80,
+            "label": "Meta",
+            "source_number": 57,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 58,
+      "name": "台积电",
+      "source_type": "企業",
+      "original": {
+        "reference_url": "https://www.tsmc.com/english",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "台积电",
+        "note": "台積電官方網站。",
+        "verification_refs": "https://www.tsmc.com/english",
+        "sheet_row": 65,
+        "labels": [
+          {
+            "number": 67,
+            "label": "台积电",
+            "source_number": 58,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 59,
+      "name": "野村",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.nomura.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "野村",
+        "note": "Nomura 官方網站。",
+        "verification_refs": "https://www.nomura.com/",
+        "sheet_row": 66,
+        "labels": [
+          {
+            "number": 68,
+            "label": "野村",
+            "source_number": 59,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 60,
+      "name": "Macro Voices",
+      "source_type": "媒體／節目",
+      "original": {
+        "reference_url": "https://www.macrovoices.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Macro Voices",
+        "note": "MacroVoices 官方節目網站，提供 Podcast、逐字稿及研究資料。",
+        "verification_refs": "https://www.macrovoices.com/",
+        "sheet_row": 67,
+        "labels": [
+          {
+            "number": 70,
+            "label": "Macro Voices",
+            "source_number": 60,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 61,
+      "name": "国泰海通证券",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.gtht.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "国泰海通证券",
+        "note": "國泰海通證券現行官方網站。",
+        "verification_refs": "https://www.gtht.com/",
+        "sheet_row": 68,
+        "labels": [
+          {
+            "number": 71,
+            "label": "国泰海通证券",
+            "source_number": 61,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 62,
+      "name": "Gartner",
+      "source_type": "研究／顧問機構",
+      "original": {
+        "reference_url": "https://www.gartner.com/en",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Gartner",
+        "note": "官方頁面已由搜尋索引核實；部分頁面限制自動讀取。",
+        "verification_refs": "https://www.gartner.com/en/about",
+        "sheet_row": 69,
+        "labels": [
+          {
+            "number": 74,
+            "label": "Gartner",
+            "source_number": 62,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 63,
+      "name": "财报tracker",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": null,
+        "reported_url_status": "待核實",
+        "raw_tags": "财报tracker",
+        "note": "僅有站內來源標籤，未能可靠確認對應網站或帳號。",
+        "verification_refs": "https://investat.ai/",
+        "sheet_row": 70,
+        "labels": [
+          {
+            "number": 75,
+            "label": "财报tracker",
+            "source_number": 63,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "missing",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "missing_url",
+          "identity_needs_review"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 64,
+      "name": "SpaceX",
+      "source_type": "企業",
+      "original": {
+        "reference_url": "https://www.spacex.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "SpaceX",
+        "note": "SpaceX 官方網站。",
+        "verification_refs": "https://www.spacex.com/company/investors",
+        "sheet_row": 71,
+        "labels": [
+          {
+            "number": 76,
+            "label": "SpaceX",
+            "source_number": 64,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 65,
+      "name": "Citadel / Ken Griffin",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.citadel.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Citadel / Ken Griffin",
+        "note": "Citadel 官網明示創辦人 Ken Griffin；與 Citadel Securities 分開。",
+        "verification_refs": "https://www.citadel.com/",
+        "sheet_row": 72,
+        "labels": [
+          {
+            "number": 77,
+            "label": "Citadel / Ken Griffin",
+            "source_number": 65,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only",
+          "publisher_speaker_boundary"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 66,
+      "name": "NVIDIA / Jensen Huang (GTC Berlin)",
+      "source_type": "企業",
+      "original": {
+        "reference_url": "https://www.nvidia.com/en-us/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "NVIDIA / Jensen Huang (GTC Berlin)",
+        "note": "NVIDIA 官方網站；GTC Berlin 為站內原始標籤的活動資訊。",
+        "verification_refs": "https://www.nvidia.com/en-us/",
+        "sheet_row": 73,
+        "labels": [
+          {
+            "number": 78,
+            "label": "NVIDIA / Jensen Huang (GTC Berlin)",
+            "source_number": 66,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "publisher_speaker_boundary"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 67,
+      "name": "Tesla",
+      "source_type": "企業",
+      "original": {
+        "reference_url": "https://www.tesla.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Tesla",
+        "note": "Tesla 官方網站。",
+        "verification_refs": "https://www.tesla.com/",
+        "sheet_row": 74,
+        "labels": [
+          {
+            "number": 81,
+            "label": "Tesla",
+            "source_number": 67,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 68,
+      "name": "IBM",
+      "source_type": "企業",
+      "original": {
+        "reference_url": "https://www.ibm.com/us-en",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "IBM",
+        "note": "IBM 官方網站。",
+        "verification_refs": "https://www.ibm.com/us-en",
+        "sheet_row": 75,
+        "labels": [
+          {
+            "number": 82,
+            "label": "IBM",
+            "source_number": 68,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 69,
+      "name": "Lam Research",
+      "source_type": "企業",
+      "original": {
+        "reference_url": "https://www.lamresearch.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Lam Research",
+        "note": "Lam Research 官方網站。",
+        "verification_refs": "https://www.lamresearch.com/",
+        "sheet_row": 76,
+        "labels": [
+          {
+            "number": 83,
+            "label": "Lam Research",
+            "source_number": 69,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 70,
+      "name": "Chamath Palihapitiya",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://www.socialcapital.com/about",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Chamath / Social Capital\nChamath / X\nChamath Palihapitiya",
+        "note": "Social Capital 官方頁面介紹創辦人 Chamath；此連結為其機構網站，非個人社交動態頁。",
+        "verification_refs": "https://www.socialcapital.com/about",
+        "sheet_row": 77,
+        "labels": [
+          {
+            "number": 88,
+            "label": "Chamath / Social Capital",
+            "source_number": 70,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 100,
+            "label": "Chamath / X",
+            "source_number": 70,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 113,
+            "label": "Chamath Palihapitiya",
+            "source_number": 70,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "profile",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "profile_only",
+          "publisher_speaker_boundary"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 71,
+      "name": "Florian",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": null,
+        "reported_url_status": "待核實",
+        "raw_tags": "Florian",
+        "note": "姓名標籤不足以唯一識別，不推測對應帳號。",
+        "verification_refs": "https://investat.ai/",
+        "sheet_row": 78,
+        "labels": [
+          {
+            "number": 89,
+            "label": "Florian",
+            "source_number": 71,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "missing",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "missing_url",
+          "identity_needs_review"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 72,
+      "name": "Wall St Engine",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://x.com/wallstengine",
+        "reported_url_status": "站內明示帳號",
+        "raw_tags": "Wall St Engine / Texas Instruments\nWall St Engine / X\nWall St Engine",
+        "note": "INVESTAT 抽查文章明示 @wallstengine；未另外驗證帳號。",
+        "verification_refs": "https://investat.ai/",
+        "sheet_row": 79,
+        "labels": [
+          {
+            "number": 90,
+            "label": "Wall St Engine / Texas Instruments",
+            "source_number": 72,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 99,
+            "label": "Wall St Engine / X",
+            "source_number": 72,
+            "handling": "合併同一來源"
+          },
+          {
+            "number": 114,
+            "label": "Wall St Engine",
+            "source_number": 72,
+            "handling": "合併同一來源"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "account",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "identity_needs_review"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 73,
+      "name": "天风证券",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.tfzq.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "天风证券",
+        "note": "天風證券官方網站。",
+        "verification_refs": "https://www.tfzq.com/",
+        "sheet_row": 80,
+        "labels": [
+          {
+            "number": 92,
+            "label": "天风证券",
+            "source_number": 73,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 74,
+      "name": "Bernstein",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.bernsteinresearch.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Bernstein",
+        "note": "Bernstein Research 官方研究平台，部分內容需登入。",
+        "verification_refs": "https://www.bernsteinresearch.com/brweb/Public/Login.aspx?ReturnUrl=/brweb/Home.aspx",
+        "sheet_row": 81,
+        "labels": [
+          {
+            "number": 93,
+            "label": "Bernstein",
+            "source_number": 74,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 75,
+      "name": "Seeking Alpha",
+      "source_type": "媒體／節目",
+      "original": {
+        "reference_url": "https://seekingalpha.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Seeking Alpha",
+        "note": "Seeking Alpha 官方網站。",
+        "verification_refs": "https://seekingalpha.com/",
+        "sheet_row": 82,
+        "labels": [
+          {
+            "number": 94,
+            "label": "Seeking Alpha",
+            "source_number": 75,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 76,
+      "name": "TS Lombard",
+      "source_type": "研究／顧問機構",
+      "original": {
+        "reference_url": "https://www.tslombard.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "TS Lombard",
+        "note": "官方研究服務頁連至此主站；本次主站自動讀取回傳 403。",
+        "verification_refs": "https://web.tslombard.com/request-a-free-trial",
+        "sheet_row": 83,
+        "labels": [
+          {
+            "number": 104,
+            "label": "TS Lombard",
+            "source_number": 76,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 77,
+      "name": "国信证券",
+      "source_type": "金融機構",
+      "original": {
+        "reference_url": "https://www.guosen.com.cn/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "国信证券",
+        "note": "國信證券官方網站。",
+        "verification_refs": "https://www.guosen.com.cn/gs/index.html",
+        "sheet_row": 84,
+        "labels": [
+          {
+            "number": 105,
+            "label": "国信证券",
+            "source_number": 77,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 78,
+      "name": "McKinsey",
+      "source_type": "研究／顧問機構",
+      "original": {
+        "reference_url": "https://www.mckinsey.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "McKinsey",
+        "note": "McKinsey & Company 官方網站。",
+        "verification_refs": "https://www.mckinsey.com/",
+        "sheet_row": 85,
+        "labels": [
+          {
+            "number": 106,
+            "label": "McKinsey",
+            "source_number": 78,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 79,
+      "name": "Fraunhofer IPT",
+      "source_type": "研究／顧問機構",
+      "original": {
+        "reference_url": "https://www.ipt.fraunhofer.de/en.html",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Fraunhofer IPT",
+        "note": "Fraunhofer Institute for Production Technology IPT 官方網站。",
+        "verification_refs": "https://www.ipt.fraunhofer.de/en.html",
+        "sheet_row": 86,
+        "labels": [
+          {
+            "number": 107,
+            "label": "Fraunhofer IPT",
+            "source_number": 79,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "webpage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 80,
+      "name": "PXS Research",
+      "source_type": "研究／顧問機構",
+      "original": {
+        "reference_url": "https://pxsresearch.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "PXS Research",
+        "note": "PXS Research 官方研究品牌網站；未逐篇核對 INVESTAT 原文鏈。",
+        "verification_refs": "https://pxsresearch.com/",
+        "sheet_row": 87,
+        "labels": [
+          {
+            "number": 108,
+            "label": "PXS Research",
+            "source_number": 80,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 81,
+      "name": "数据要素社",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": null,
+        "reported_url_status": "待核實",
+        "raw_tags": "数据要素社",
+        "note": "搜尋可見同名發布帳號與報告署名，尚未確認唯一官方網站，暫留空。",
+        "verification_refs": "https://investat.ai/",
+        "sheet_row": 88,
+        "labels": [
+          {
+            "number": 110,
+            "label": "数据要素社",
+            "source_number": 81,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "missing",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "missing_url",
+          "identity_needs_review"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 82,
+      "name": "CME Group",
+      "source_type": "交易所",
+      "original": {
+        "reference_url": "https://www.cmegroup.com/",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "CME Group",
+        "note": "CME Group 官方網站。",
+        "verification_refs": "https://www.cmegroup.com/",
+        "sheet_row": 89,
+        "labels": [
+          {
+            "number": 111,
+            "label": "CME Group",
+            "source_number": 82,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "homepage",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "homepage_only"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 83,
+      "name": "Elon Musk",
+      "source_type": "人物／內容帳號",
+      "original": {
+        "reference_url": "https://www.tesla.com/elon-musk",
+        "reported_url_status": "已核實官網",
+        "raw_tags": "Elon Musk",
+        "note": "Tesla 官網人物介紹頁；此連結不是 Elon Musk 個人發帖頁。",
+        "verification_refs": "https://www.tesla.com/elon-musk",
+        "sheet_row": 90,
+        "labels": [
+          {
+            "number": 112,
+            "label": "Elon Musk",
+            "source_number": 83,
+            "handling": "獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "profile",
+        "relevance": "person_monitoring",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "profile_only",
+          "publisher_speaker_boundary"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    },
+    {
+      "number": 84,
+      "name": "Meta / Patrick Collison访谈",
+      "source_type": "訪談（待確認）",
+      "original": {
+        "reference_url": null,
+        "reported_url_status": "待核實",
+        "raw_tags": "Meta / Patrick Collison访谈",
+        "note": "原始發布頻道待確認，保守獨立列示。",
+        "verification_refs": "https://investat.ai/",
+        "sheet_row": 91,
+        "labels": [
+          {
+            "number": 66,
+            "label": "Meta / Patrick Collison访谈",
+            "source_number": 84,
+            "handling": "待確認，獨立保留"
+          }
+        ]
+      },
+      "triage": {
+        "entry_kind": "missing",
+        "relevance": "background",
+        "issues": [
+          "entry_not_verified",
+          "access_not_verified",
+          "latency_not_measured",
+          "missing_url",
+          "identity_needs_review",
+          "publisher_speaker_boundary"
+        ],
+        "method_hint": "需核实发布入口；根据响应再选择API、订阅、普通HTML或浏览器，不依据首页地址自动启用。",
+        "verification": "offline_shape_only"
+      }
+    }
+  ]
+}

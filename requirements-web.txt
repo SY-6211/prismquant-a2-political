@@ -1,0 +1,2 @@
+# Optional webpage extraction. Install in addition to requirements.txt.
+trafilatura==2.3.1
